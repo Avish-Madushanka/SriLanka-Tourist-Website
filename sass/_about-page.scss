@@ -1,0 +1,146 @@
+/*------------------
+   About page
+ ------------------*/
+ .about-section {
+    height: 100%;
+     .about-warp {
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        @media #{$medium_device, $tab_device, $large_mobile, $small_mobile} {
+            display: block;
+        }
+     }
+     .about-left {
+         background: $primary_color;
+         -ms-flex: 0 0 47%;
+         flex: 0 0 47%;
+         max-width: 47%;
+         padding: 0 15px;
+         @media #{$medium_device, $tab_device, $large_mobile, $small_mobile} {
+            max-width: 100%;
+        }
+     }
+     .about-right {
+        -ms-flex: 0 0 53%;
+        flex: 0 0 53%;
+        max-width: 53%;
+        padding: 0 15px;
+        @media #{$medium_device, $tab_device, $large_mobile, $small_mobile} {
+            max-width: 100%;
+        }
+     }
+ }
+ .about-img {
+     text-align: center;
+     background-image: url("../img/about-bg.png");
+     background-repeat: no-repeat;
+     background-size: inherit;
+    background-position: center center;
+    @media #{$large_mobile} {
+        background-size: 300px;
+    }
+    @media #{ $small_mobile} {
+        background-size: 250px;
+    }
+     img {
+         width: 515px;
+         height: 515px;
+         border-radius: 50%;
+         margin: 82px auto 50px;
+         @media #{ $large_mobile} {
+            width: 250px;
+            height: 250px;
+        }
+         @media #{ $small_mobile} {
+            width: 180px;
+            height: 180px;
+        }
+     }
+ }
+ .profile-text {
+     max-width: 550px;
+     margin: 0 auto;
+     padding-bottom: 40px;
+     h2 {
+         font-weight: 500;
+     }
+     p {
+         padding-top: 20px;
+         margin-bottom: 30px;
+     }
+     .profile-btn {
+         display: inline-block;
+         min-width: 160px;
+         padding: 9px 10px;
+         margin-bottom: 10px;
+         margin-right: 28px;
+         color: $white_color;
+         font-size: 16px;
+         font-weight: 500;
+         text-align: center;
+         border-radius: 50px;
+         border: 2px solid rgba(255, 255, 255, 0.3);
+     }
+     .profile-email {
+         display: inline-block;
+         font-style: italic;
+         font-size: 16px;
+         color: $white_color;
+         text-decoration: underline;
+     }
+ }
+
+ .about-text {
+     max-width: 810px;
+     margin: 0 auto;
+     padding: 75px 0 50px;
+     h2 {
+         display: inline-block;
+         padding-bottom: 8px;
+         border-bottom: 3px solid $primary_color;
+         margin-bottom: 20px;
+     }
+     p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 9px;
+    }
+ }
+
+.skill-warp {
+    max-width: 930px;
+    margin: 0 auto;
+}
+ .circle-progress {
+	text-align: center;
+	display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+	canvas {
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.progress-info {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		margin-top: -10px;
+		h2 {
+			font-size: 16px;
+            line-height: 1;
+            font-weight: 600;
+		}
+	}
+}
+
+.circle-item {
+    margin-bottom: 30px;
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

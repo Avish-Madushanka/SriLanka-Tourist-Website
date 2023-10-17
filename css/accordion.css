@@ -1,0 +1,51 @@
+.pana-accordion {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden
+}
+
+.pana-accordion .pana-accordion-wrap {
+	margin-left: -1px;
+	position: relative;
+	width: 300%
+}
+
+.pana-accordion .pana-accordion-wrap .pana-accordion-item {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-position: top left -200px;
+	transition: background-position 0.4s;
+	
+}
+.pana-accordion .pana-accordion-wrap .pana-accordion-item.active {
+	background-position: top center;
+}
+
+.pana-accordion .pana-accordion-wrap .pana-accordion-item .pana-accordion-mask {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 10;
+	background-color: #000;
+	filter: alpha(opacity=40);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	-webkit-opacity: 0.4;
+	-khtml-opacity: 0.4;
+	-moz-opacity: 0.4;
+	-ms-opacity: 0.4;
+	-o-opacity: 0.4;
+	opacity: 0.4
+}
+
+.pana-accordion .pana-accordion-wrap .pana-accordion-item.active .pana-accordion-mask {
+	display: none
+}

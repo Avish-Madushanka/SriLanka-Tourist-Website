@@ -1,0 +1,94 @@
+/*----------------
+   Blog Page
+ ----------------*/
+ .blog-section {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+   
+}
+ .blog-grid-warp {
+    margin-left: -5px;
+    margin-right: -5px;
+ }
+
+ .blog-grid-sizer,
+ .blog-grid{
+    width: 20%;
+    @media #{$big_screen} {
+        width: 25%;
+    }
+    @media #{$medium_device} {
+        width: 33.333333%;
+    }
+    @media #{$tab_device, $large_mobile} {
+        width: 50%;
+    }
+    @media #{$small_mobile} {
+        width: 100%;
+        img {
+            min-height: 250px;
+        }
+    }
+}
+.blog-grid{
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+ .blog-item {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        bottom: 0;
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 94%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 94%);
+        background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 94%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    }
+    img {
+        min-width: 100%;
+    }
+    .bi-tag {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        display: inline-block;
+        padding: 4px 20px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: $primary_color;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 2px;
+        background: $white_color;
+    }
+    .bi-text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-left: 30px;
+        padding-right: 20px;
+        z-index: 99;
+        .bi-date {
+            font-size: 13px;
+            color: $white_color;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            padding-bottom: 25px;
+            color: $white_color;
+            line-height: 1.6;
+            a {
+                color: $white_color;
+            }
+        }
+    }
+ }

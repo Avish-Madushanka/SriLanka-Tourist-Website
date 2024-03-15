@@ -1,2 +1,2 @@
-<h1> Sri Lanka Tourist Management Website </h1>
+<h1> Sri Lankan Tourist Management Website </h1>
 

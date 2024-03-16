@@ -5,5 +5,5 @@
 
 <h4>Languages Used:</h4>
 <ul>
-  <li></li>
+  <li>HTML</li>
 </ul>

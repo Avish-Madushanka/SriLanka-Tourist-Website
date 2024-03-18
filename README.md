@@ -8,7 +8,7 @@
   <li>HTML</li>
 
   <li>CSS</li>
-  <li>JS</li>
+
 
 
 
